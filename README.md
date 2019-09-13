@@ -1,5 +1,7 @@
 # Docker - EDC 2019
 
+Full EDC program here: [https://edc2019.github.io/](https://edc2019.github.io/).
+
 This repo contains materials related to my Docker workshop on Equinor Developer Conference 2019. The workshop is planned at 13:30 to 16:00.
 
 What the workshop will try to cover:
