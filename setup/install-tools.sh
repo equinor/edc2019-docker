@@ -20,5 +20,5 @@ git clone
 
 mkdir edc
 cd edc
-git clone git@github.com:equinor/edc2019-docker.git
+git clone https://github.com/equinor/edc2019-docker.git
 
