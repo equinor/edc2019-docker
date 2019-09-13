@@ -1,3 +1,11 @@
+# Equinor Developer Conference 2019
+# VM pool prep script
+# - Download and install docker
+# - clone repo with tools and examples
+# 
+
+set -x
+
 cd /home/ubuntu
 
 apt-get update
@@ -16,9 +24,10 @@ apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
 apt-get install git
-git clone
 
 mkdir edc
 cd edc
 git clone https://github.com/equinor/edc2019-docker.git
+
+docker login --username edc --password edcEDC3DC harbor.edc.stian.tech
 

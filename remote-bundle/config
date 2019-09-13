@@ -1,0 +1,6 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+
+Host vm01.edc.stian.tech
+    User ubuntu
+    HostName vm01.edc.stian.tech
+    IdentityFile C:\Users\Stian\.ssh\edc_id_rsa
