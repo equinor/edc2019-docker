@@ -1,0 +1,118 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "networkInterfaceName": {
+            "value": "edcnic02"
+        },
+        "networkSecurityGroupName": {
+            "value": "edc-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "HTTP",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "80"
+                    }
+                },
+                {
+                    "name": "HTTPS",
+                    "properties": {
+                        "priority": 320,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "443"
+                    }
+                },
+                {
+                    "name": "SSH",
+                    "properties": {
+                        "priority": 340,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "22"
+                    }
+                }
+            ]
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkName": {
+            "value": "edc"
+        },
+        "addressPrefixes": {
+            "value": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "default",
+                    "properties": {
+                        "addressPrefix": "10.0.0.0/24"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName": {
+            "value": "edcip02"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "edcvm02"
+        },
+        "virtualMachineRG": {
+            "value": "edc2019-docker"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "ubuntu"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC9s/CFLpmP5fRPS1NMBYY7gu3gGTILS9nkbjC3L//jCGfphsjLVPsDZrocB1BFkGK08E2vWCpIexm2Z5Rlo2oVzEfTF+VcrqFoy43zmVg93r1pLeU/oO10f6Tw2fN59eQLog7gmnZlhKKkNobnT5PA5yhKeVB/zChGcyn8V/Z0MKle+iJ0+nYIRvJiMW8tYBVNpL39+aO6zb9KWnpcFX80L5X79A+fF9jSH7/HEJWvc2QHL2cZnCWCtC4rnJ92wjSkhpKkDv95rpiKef5zJO70KTgPmG7h76639LL8duu2NZKmzl28z4yI2MCgwh4INxcNT8qrsd8RTtGL1Fvq5gTH8FD9ogESprkd64q1DJA3ciAjAq+LK3Lb9Q3RAMiJBAL3zMoggn5nwFmHmdFTTTkBK3De0GTYIvLUnndjAjB/86FUwPCYaHbNXAJMSC1WO0B3qVZVPff2IrjfJJ64JfPo6h4XD7q9yzYw8yZXBREBg3lkeSUAIjavp0kNH7CUt/+U5Sl1X6hW/ixkNG3W4U+q4VDscUKaezq0ZhsYM4fyuFMO7RIWZnhS6dzJ6ICR6eqrIc8mOktus9wbTdF5rYgqgDl0gu4W/a7/U54k4Z2kp0hVWN5vm4jMhA7FcY/HSBMkin1B5LBlEEGc+OeAgVV1XTMloI9jwqZmk231N+1TWw== ubuntu@laptop"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "edc2019dockerdiag"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/edc2019dockerdiag"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
+        }
+    }
+}
