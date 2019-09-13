@@ -3,4 +3,244 @@
 Host vm01.edc.stian.tech
     User ubuntu
     HostName vm01.edc.stian.tech
-    IdentityFile C:\Users\Stian\.ssh\edc_id_rsa
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm02.edc.stian.tech
+    User ubuntu
+    HostName vm02.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm03.edc.stian.tech
+    User ubuntu
+    HostName vm03.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm04.edc.stian.tech
+    User ubuntu
+    HostName vm04.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm05.edc.stian.tech
+    User ubuntu
+    HostName vm05.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm06.edc.stian.tech
+    User ubuntu
+    HostName vm06.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm07.edc.stian.tech
+    User ubuntu
+    HostName vm07.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm08.edc.stian.tech
+    User ubuntu
+    HostName vm08.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm09.edc.stian.tech
+    User ubuntu
+    HostName vm09.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm10.edc.stian.tech
+    User ubuntu
+    HostName vm10.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm11.edc.stian.tech
+    User ubuntu
+    HostName vm11.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm12.edc.stian.tech
+    User ubuntu
+    HostName vm12.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm13.edc.stian.tech
+    User ubuntu
+    HostName vm13.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm14.edc.stian.tech
+    User ubuntu
+    HostName vm14.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm15.edc.stian.tech
+    User ubuntu
+    HostName vm15.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm16.edc.stian.tech
+    User ubuntu
+    HostName vm16.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm17.edc.stian.tech
+    User ubuntu
+    HostName vm17.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm18.edc.stian.tech
+    User ubuntu
+    HostName vm18.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm19.edc.stian.tech
+    User ubuntu
+    HostName vm19.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm20.edc.stian.tech
+    User ubuntu
+    HostName vm20.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm21.edc.stian.tech
+    User ubuntu
+    HostName vm21.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm22.edc.stian.tech
+    User ubuntu
+    HostName vm22.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm23.edc.stian.tech
+    User ubuntu
+    HostName vm23.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm24.edc.stian.tech
+    User ubuntu
+    HostName vm24.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm25.edc.stian.tech
+    User ubuntu
+    HostName vm25.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm26.edc.stian.tech
+    User ubuntu
+    HostName vm26.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm27.edc.stian.tech
+    User ubuntu
+    HostName vm27.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm28.edc.stian.tech
+    User ubuntu
+    HostName vm28.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm29.edc.stian.tech
+    User ubuntu
+    HostName vm29.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm30.edc.stian.tech
+    User ubuntu
+    HostName vm30.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm31.edc.stian.tech
+    User ubuntu
+    HostName vm31.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm32.edc.stian.tech
+    User ubuntu
+    HostName vm32.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm33.edc.stian.tech
+    User ubuntu
+    HostName vm33.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm34.edc.stian.tech
+    User ubuntu
+    HostName vm34.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm35.edc.stian.tech
+    User ubuntu
+    HostName vm35.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm36.edc.stian.tech
+    User ubuntu
+    HostName vm36.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm37.edc.stian.tech
+    User ubuntu
+    HostName vm37.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm38.edc.stian.tech
+    User ubuntu
+    HostName vm38.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm39.edc.stian.tech
+    User ubuntu
+    HostName vm39.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm40.edc.stian.tech
+    User ubuntu
+    HostName vm40.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm41.edc.stian.tech
+    User ubuntu
+    HostName vm41.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm42.edc.stian.tech
+    User ubuntu
+    HostName vm42.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm43.edc.stian.tech
+    User ubuntu
+    HostName vm43.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm44.edc.stian.tech
+    User ubuntu
+    HostName vm44.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm45.edc.stian.tech
+    User ubuntu
+    HostName vm45.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm46.edc.stian.tech
+    User ubuntu
+    HostName vm46.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm47.edc.stian.tech
+    User ubuntu
+    HostName vm47.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm48.edc.stian.tech
+    User ubuntu
+    HostName vm48.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
+
+Host vm49.edc.stian.tech
+    User ubuntu
+    HostName vm49.edc.stian.tech
+    IdentityFile C:\edc\edc_id_rsa
