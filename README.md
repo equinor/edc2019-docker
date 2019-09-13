@@ -32,6 +32,8 @@ On an Equinor managed laptop this requires `Elevated Installer` (and maybe `Elev
     * Subnet 10.0.75.0
     * DNS server: 143.97.38.116
 
+**Start hacking!**
+
 ### Alternative - Remote with VS Code
 
 If you cannot install Docker Desktop but have Visual Studio Code installed you can use VS Code Remote to connect to a virtual machine I have created in Azure that already has Docker installed.
@@ -40,48 +42,39 @@ Download these VS Code extensions:
 * [ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 * [ms-vscode-remote.remote-ssh](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
+[Download the remote bundle I have prepared](https://github.com/equinor/edc2019-docker/raw/master/remote-bundle/remote-bundle.zip) and unzip it into `C:\edc\`.
 
+Open PowerShell and move the config file to where VS Code expects to find it. (If you are already using VS Code SSH Remote, append the contents to the existing file).
+
+    # PowerShell:
+    cd C:\edc\
+    cp config $env:USERPROFILE\.ssh\config
+
+You can now connect to one of the VMs in VS Code with 
+* View
+  * Command Palette
+    * Remote-SSH - Connect to Host...
+
+**You will be assigned a number at the start of the workshop for the VM you should use.**
+
+Click the Explorer button in VS Code and Open Folder to open the folder on the remote machine.
+
+Click View - Terminal to open the terminal on the remote machine. Issue the command `sudo su` to change to root, which is required for running `docker` commands.
+
+**Start hacking!**
 
 ### Alternative - Remote with putty
 
+[Download the remote bundle I have prepared](https://github.com/equinor/edc2019-docker/raw/master/remote-bundle/remote-bundle.zip) and unzip it into `C:\edc\`.
 
+**You will be assigned a number at the start of the workshop for the VM you should use.**
 
+Use PowerShell to start a putty (SSH client) session to the remote host:
 
+    # PowerShell
+    cd C:\edc\
+    .\putty.exe -i edc.ppk -l ubuntu vm03.edc.stian.tech
 
---- 
+Run `sudo su` in the terminal to change to `root` user which is required for running `docker` commands.
 
-You can use the [editor on GitHub](https://github.com/equinor/edc2019-docker/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/equinor/edc2019-docker/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Start hacking!**
