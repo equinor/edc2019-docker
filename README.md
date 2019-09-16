@@ -1,16 +1,18 @@
 # Docker - EDC 2019
 
-Full EDC program here: [https://edc2019.github.io/](https://edc2019.github.io/).
+> **[Download presentation here](./Docker_workshop_EDC2019.pdf)**
+
+> Full EDC program here: [https://edc2019.github.io/](https://edc2019.github.io/).
 
 This repo contains materials related to my Docker workshop on Equinor Developer Conference 2019. The workshop is planned at 13:30 to 16:00.
 
 What the workshop will try to cover:
+
 * Docker background
 * Basic docker usage
-   * Downloading and running images 
-   * Building and publishing images.
+  * Downloading and running images
+  * Building and publishing images.
 * Cloud native application development practices (12 factor app)
-
 
 # Prerequisites
 
@@ -41,6 +43,7 @@ On an Equinor managed laptop this requires `Elevated Installer` (and maybe `Elev
 If you cannot install Docker Desktop but have Visual Studio Code installed you can use VS Code Remote to connect to a virtual machine I have created in Azure that already has Docker installed.
 
 Download these VS Code extensions:
+
 * [ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 * [ms-vscode-remote.remote-ssh](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
@@ -52,7 +55,8 @@ Open PowerShell and move the config file to where VS Code expects to find it. (I
     cd C:\edc\
     cp config $env:USERPROFILE\.ssh\config
 
-You can now connect to one of the VMs in VS Code with 
+You can now connect to one of the VMs in VS Code with
+
 * View
   * Command Palette
     * Remote-SSH - Connect to Host...
