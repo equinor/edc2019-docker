@@ -55,6 +55,15 @@ Open PowerShell and move the config file to where VS Code expects to find it. (I
     cd C:\edc\
     cp config $env:USERPROFILE\.ssh\config
 
+Reduce the permissions on the private-key:
+
+    cmd /c icacls C:\edc\edc_id_rsa /c /t /inheritance:d
+    cmd /c icacls C:\edc\edc_id_rsa /c /t /grant %username%:F
+    cmd /c icacls C:\edc\edc_id_rsa /c /t /remove Administrator "Authenticated Users" BUILTIN\Administrators BUILTIN Everyone System Users
+
+(Windows SSH will refuse to use a private-key with too generous permissions).
+
+
 You can now connect to one of the VMs in VS Code with
 
 * View
@@ -72,14 +81,6 @@ Click View - Terminal to open the terminal on the remote machine. Issue the comm
 ### Alternative - Remote with putty
 
 [Download the remote bundle I have prepared](https://github.com/equinor/edc2019-docker/raw/master/remote-bundle/remote-bundle.zip) and unzip it into `C:\edc\`.
-
-Reduce the permissions on the private-key:
-
-    cmd /c icacls C:\edc\edc_id_rsa /c /t /inheritance:d
-    cmd /c icacls C:\edc\edc_id_rsa /c /t /grant %username%:F
-    cmd /c icacls C:\edc\edc_id_rsa /c /t /remove Administrator "Authenticated Users" BUILTIN\Administrators BUILTIN Everyone System Users
-
-(Windows SSH will refuse to use a private-key with too generous permissions).
 
 **You will be assigned a number at the start of the workshop for the VM you should use.**
 
