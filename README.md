@@ -22,7 +22,7 @@ If you are unable to use Docker you can play around with it in a browser using f
 
 ## Preferred - Docker locally
 
-The preferred way is to download and install Docker Desktop on your machine. You can download the installer without logging in to docker.com [here](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe).
+The preferred way is to download and install Docker Desktop on your machine. You can download the installer without logging in to docker.com here: [Windows](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe) and [macOS](https://download.docker.com/mac/stable/Docker.dmg).
 
 ### On Equinor managed laptop
 
@@ -72,6 +72,14 @@ Click View - Terminal to open the terminal on the remote machine. Issue the comm
 ### Alternative - Remote with putty
 
 [Download the remote bundle I have prepared](https://github.com/equinor/edc2019-docker/raw/master/remote-bundle/remote-bundle.zip) and unzip it into `C:\edc\`.
+
+Reduce the permissions on the private-key:
+
+    cmd /c icacls C:\edc\edc_id_rsa /c /t /inheritance:d
+    cmd /c icacls C:\edc\edc_id_rsa /c /t /grant %username%:F
+    cmd /c icacls C:\edc\edc_id_rsa /c /t /remove Administrator "Authenticated Users" BUILTIN\Administrators BUILTIN Everyone System Users
+
+(Windows SSH will refuse to use a private-key with too generous permissions).
 
 **You will be assigned a number at the start of the workshop for the VM you should use.**
 

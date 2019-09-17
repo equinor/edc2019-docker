@@ -3,7 +3,7 @@ echo "Generating parameters file for $VMNAME"
 cat parameters.json | jq --arg VMNAME "$VMNAME" '.parameters.networkInterfaceName.value = $VMNAME | .parameters.virtualMachineName.value = $VMNAME | .parameters.publicIpAddressName.value = $VMNAME' > parameters-generated.json
 
 echo "Deploying VM"
-az group deployment create --name edc$NAME --resource-group edc2019-docker --template-file template.json --parameters parameters-generated.json --output table
+az group deployment create --name edc$VMNAME --resource-group edc2019-docker --template-file template.json --parameters parameters-generated.json --output table
 
 export IP=$(az network public-ip show --name $VMNAME --resource-group edc2019-docker | jq -r .ipAddress)
 

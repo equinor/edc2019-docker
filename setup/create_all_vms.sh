@@ -1,3 +1,10 @@
+date
+VMNAME=vm01 bash create_vm.sh
+VMNAME=vm02 bash create_vm.sh
+VMNAME=vm03 bash create_vm.sh
+VMNAME=vm04 bash create_vm.sh
+VMNAME=vm05 bash create_vm.sh
+VMNAME=vm06 bash create_vm.sh
 VMNAME=vm07 bash create_vm.sh
 VMNAME=vm08 bash create_vm.sh
 VMNAME=vm09 bash create_vm.sh
@@ -41,3 +48,4 @@ VMNAME=vm46 bash create_vm.sh
 VMNAME=vm47 bash create_vm.sh
 VMNAME=vm48 bash create_vm.sh
 VMNAME=vm49 bash create_vm.sh
+date
